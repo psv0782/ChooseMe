@@ -36,15 +36,6 @@
     color: #00c68a;
 }
 
-.menu-button {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: #1a1a1a;
-    cursor: pointer;
-    display: block;
-}
-
 /* === DESKTOP NAV === */
 .nav-desktop {
     display: none;
@@ -62,13 +53,48 @@
     color: #00c68a;
 }
 
+/* === SVG ICON BUTTONS === */
+.menu-icon,
+.close-icon {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.menu-icon:hover,
+.close-icon:hover {
+    transform: scale(1.1);
+}
+
+/* SVG стилі */
+.menu-icon svg,
+.close-icon svg {
+    width: 32px;
+    height: 32px;
+    stroke: #1a1a1a;
+    stroke-width: 2;
+    fill: none;
+    display: block;
+    pointer-events: none;
+    transition: stroke 0.2s ease;
+}
+
+.menu-icon:hover svg,
+.close-icon:hover svg {
+    stroke: #00c68a;
+}
+
 /* === MOBILE MENU === */
 .mobile-menu {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    inset: 0;
     background-color: rgba(243, 246, 251, 1);
     z-index: 200;
     display: flex;
@@ -88,6 +114,12 @@
     pointer-events: auto;
 }
 
+.close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
 .mobile-nav {
     display: flex;
     flex-direction: column;
@@ -98,27 +130,16 @@
 .mobile-link {
     text-decoration: none;
     color: #1a1a1a;
-    transition: color 0.2s;
+    transition: color 0.2s ease;
 }
 
 .mobile-link:hover {
     color: #00c68a;
 }
 
-.close-button {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: #1a1a1a;
-    cursor: pointer;
-}
-
 /* === BREAKPOINTS === */
 @media (min-width: 768px) {
-    .menu-button {
+    .menu-icon {
         display: none;
     }
 

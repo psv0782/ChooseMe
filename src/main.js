@@ -1,0 +1,5 @@
+import "./js/api.js"
+import "./js/faq.js"
+import "./js/my-projects.js"
+import "./js/reviews.js"
+import "./js/tech-skills.js"

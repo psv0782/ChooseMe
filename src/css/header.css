@@ -25,6 +25,7 @@
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .logo-black {
@@ -49,16 +50,42 @@
     display: none;
 }
 
+.nav-desktop a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    margin-left: 2rem;
+    transition: color 0.2s ease;
+}
+
+.nav-desktop a:hover {
+    color: #00c68a;
+}
+
 /* === MOBILE MENU === */
 .mobile-menu {
     position: fixed;
-    inset: 0;
-    background-color: rgba(243, 246, 251, 0.98);
-    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(243, 246, 251, 1);
+    z-index: 200;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .mobile-nav {
@@ -68,13 +95,13 @@
     font-size: 1.5rem;
 }
 
-.mobile-nav a {
+.mobile-link {
     text-decoration: none;
     color: #1a1a1a;
     transition: color 0.2s;
 }
 
-.mobile-nav a:hover {
+.mobile-link:hover {
     color: #00c68a;
 }
 
@@ -89,23 +116,7 @@
     cursor: pointer;
 }
 
-/* === MEDIA QUERIES === */
-
-/* MOBILE гумова — від 320px */
-@media (max-width: 359px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-/* MOBILE адаптив — від 360px */
-@media (min-width: 360px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-/* TABLET — від 768px */
+/* === BREAKPOINTS === */
 @media (min-width: 768px) {
     .menu-button {
         display: none;
@@ -113,19 +124,6 @@
 
     .nav-desktop {
         display: flex;
-        gap: 2rem;
-        align-items: center;
-    }
-
-    .nav-desktop a {
-        text-decoration: none;
-        color: #1a1a1a;
-        font-weight: 500;
-        transition: color 0.2s;
-    }
-
-    .nav-desktop a:hover {
-        color: #00c68a;
     }
 
     .mobile-menu {
@@ -133,7 +131,6 @@
     }
 }
 
-/* DESKTOP — від 1280px */
 @media (min-width: 1280px) {
     .header {
         padding: 1.5rem 4rem;

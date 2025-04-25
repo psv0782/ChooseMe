@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-
-<body>
-  <!-- Header -->
-
-  <header class="header">
+<!-- Header -->
+<header class="header">
+  <div class="container header-container">
     <a href="/" class="logo">
       <span class="logo-black">LLOYD</span><span class="logo-green">JEFFERSON.</span>
     </a>
@@ -24,57 +15,54 @@
     <!-- Mobile Menu Button with SVG -->
     <button id="menuBtn" class="menu-icon" aria-label="Відкрити меню">
       <svg width="32" height="32">
-        <use href="/src/img/icons.svg#menu-open"></use>
+        <use href="../img/icons.svg#menu-open"></use>
       </svg>
     </button>
-  </header>
-
-  <!-- Mobile Menu Modal -->
-  <div id="mobileMenu" class="mobile-menu hidden">
-    <button id="closeBtn" class="close-icon" aria-label="Закрити меню">
-      <svg width="32" height="32">
-        <use href="/src/img/icons.svg#menu-close"></use>
-      </svg>
-    </button>
-
-    <nav class="mobile-nav">
-      <a href="#about" class="mobile-link">About me</a>
-      <a href="#projects" class="mobile-link">Projects</a>
-      <a href="#contacts" class="mobile-link">Contacts</a>
-    </nav>
   </div>
+</header>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const menuBtn = document.getElementById("menuBtn");
-      const closeBtn = document.getElementById("closeBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const navLinks = document.querySelectorAll(".mobile-link");
+<!-- Mobile Menu Modal -->
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/" class="logo logo-modal">
+    <span class="logo-black">LLOYD</span><span class="logo-green">JEFFERSON.</span>
+  </a>
+  <button id="closeBtn" class="close-icon" aria-label="Закрити меню">
+    <svg width="32" height="32">
+      <use href="../img/icons.svg#menu-close"></use>
+    </svg>
+  </button>
 
-      const openMenu = () => {
-        mobileMenu.classList.remove("hidden");
-        mobileMenu.classList.add("show");
-        document.body.classList.add("no-scroll");
-      };
+  <nav class="mobile-nav">
+    <a href="#about" class="mobile-link">About me</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contacts" class="mobile-link">Contacts</a>
+  </nav>
+</div>
 
-      const closeMenu = () => {
-        mobileMenu.classList.remove("show");
-        setTimeout(() => {
-          mobileMenu.classList.add("hidden");
-        }, 300);
-        document.body.classList.remove("no-scroll");
-      };
+<!-- Scripts -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menuBtn");
+    const closeBtn = document.getElementById("closeBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.querySelectorAll(".mobile-link");
 
-      menuBtn.addEventListener("click", openMenu);
-      closeBtn.addEventListener("click", closeMenu);
+    const openMenu = () => {
+      mobileMenu.classList.remove("hidden");
+      mobileMenu.classList.add("show");
+      document.body.classList.add("no-scroll");
+    };
 
-      navLinks.forEach(link => {
-        link.addEventListener("click", () => closeMenu());
-      });
-    });
-  </script>
+    const closeMenu = () => {
+      mobileMenu.classList.remove("show");
+      setTimeout(() => {
+        mobileMenu.classList.add("hidden");
+      }, 300);
+      document.body.classList.remove("no-scroll");
+    };
 
-
-</body>
-
-</html>
+    menuBtn.addEventListener("click", openMenu);
+    closeBtn.addEventListener("click", closeMenu);
+    navLinks.forEach(link => link.addEventListener("click", closeMenu));
+  });
+</script>

@@ -9,12 +9,7 @@
 
 /* === HEADER === */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     padding: 1rem 1.5rem;
-    background-color: #f3f6fb;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +28,7 @@
 }
 
 .logo-green {
-    color: #00c68a;
+    color: #00b068;
 }
 
 /* === DESKTOP NAV === */

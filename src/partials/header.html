@@ -9,46 +9,59 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="logo">
+    <a href="/" class="logo">
       <span class="logo-black">LLOYD</span><span class="logo-green">JEFFERSON.</span>
-    </div>
+    </a>
 
-    <!-- Навігація (планшет/десктоп) -->
     <nav class="nav-desktop">
       <a href="#about">About me</a>
       <a href="#projects">Projects</a>
       <a href="#contacts">Contacts</a>
     </nav>
 
-    <!-- Кнопка меню (мобільна версія) -->
     <button id="menuBtn" class="menu-button">&#9776;</button>
   </header>
 
-  <!-- Мобільне меню -->
+  <!-- Mobile Menu -->
   <div id="mobileMenu" class="mobile-menu hidden">
     <button id="closeBtn" class="close-button">&times;</button>
     <nav class="mobile-nav">
-      <a href="#about">About me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contacts">Contacts</a>
+      <a href="#about" class="mobile-link">About me</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#contacts" class="mobile-link">Contacts</a>
     </nav>
   </div>
 
   <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const closeBtn = document.getElementById("closeBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuBtn = document.getElementById("menuBtn");
+      const closeBtn = document.getElementById("closeBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const navLinks = document.querySelectorAll(".mobile-link");
 
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.remove("hidden");
-      document.body.classList.add("no-scroll");
-    });
+      const openMenu = () => {
+        mobileMenu.classList.remove("hidden");
+        mobileMenu.classList.add("show");
+        document.body.classList.add("no-scroll");
+      };
 
-    closeBtn.addEventListener("click", () => {
-      mobileMenu.classList.add("hidden");
-      document.body.classList.remove("no-scroll");
+      const closeMenu = () => {
+        mobileMenu.classList.remove("show");
+        setTimeout(() => {
+          mobileMenu.classList.add("hidden");
+        }, 300);
+        document.body.classList.remove("no-scroll");
+      };
+
+      menuBtn.addEventListener("click", openMenu);
+      closeBtn.addEventListener("click", closeMenu);
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => closeMenu());
+      });
     });
   </script>
+
 
 </body>
 

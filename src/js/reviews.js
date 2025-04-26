@@ -5,8 +5,6 @@ import { Navigation, Keyboard } from 'swiper/modules';
 Swiper.use([Navigation, Keyboard]);
 import 'swiper/css';
 
-// import 'swiper/css/pagination';
-
 const reviewsWrap = document.querySelector('#reviews-container');
 const errorReviews = document.querySelector('.error-message');
 
@@ -24,7 +22,7 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    320: {
+    100: {
       slidesPerView: 1,
       spaceBetween: 20,
     },

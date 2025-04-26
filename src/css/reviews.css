@@ -26,13 +26,11 @@
   display: flex;
 }
 .swiper-slide {
-  width: 200px !important;
   display: flex;
   flex-direction: row;
   border-radius: 16px !important;
   padding: 32px;
   width: 296px !important;
-  /* height: 224px; */
   background: var(--light-grey);
 }
 @media only screen and (min-width: 768px) {
@@ -143,7 +141,4 @@
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-}
-.hidden {
-  display: none;
 }

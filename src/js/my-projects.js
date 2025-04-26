@@ -1,10 +1,10 @@
 const projects = [
   {
-    title: "Wallet webservice ",
+    title: "Wallet webservice",
     tech: "React, JavaScript, Node JS, Git",
     image1x: "../img/project3.jpg",
     image2x: "../img/project3@2x.jpg",
-    alt: "Wallet webservice ",
+    alt: "Wallet webservice",
     link: "#"
   },
   {
@@ -99,7 +99,8 @@ const createProjectCard = (project) => {
     <p class="project-tech">${project.tech}</p>
     <div class="link-visit">
       <h3 class="project-title">${project.title}</h3>
-      <a href="${project.link}" class="project-btn">VISIT
+      <a href="${project.link}" class="project-btn" target="_blank" rel="noopener noreferrer">
+        VISIT
         <svg class="icon-project" width="18" height="18">
           <use href="../img/icons.svg#arrow-visit"></use>
         </svg>
@@ -110,15 +111,14 @@ const createProjectCard = (project) => {
   return li;
 };
 
-const loadMoreProjects = () => {
+const renderProjectsBatch = () => {
   const slice = projects.slice(currentIndex, currentIndex + batchSize);
+  const newCards = [];
 
-  const newCards = []; // для прокрутки
-
-  slice.forEach(project => {
+  slice.forEach((project) => {
     const card = createProjectCard(project);
-    newCards.push(card);
     projectsList.appendChild(card);
+    newCards.push(card);
   });
 
   currentIndex += batchSize;
@@ -127,18 +127,30 @@ const loadMoreProjects = () => {
     loadMoreBtn.style.display = "none";
   }
 
-  // Прокручуємо до першої нової картки
+  return newCards;
+};
+
+const scrollToFirstNewCard = (newCards) => {
   if (newCards.length > 0) {
     setTimeout(() => {
       newCards[0].scrollIntoView({
         behavior: "smooth",
         block: "start"
       });
-    }, 200); // невелика затримка, щоб DOM встиг намалювати
+    }, 200);
   }
 };
 
-loadMoreBtn.addEventListener("click", loadMoreProjects);
+const loadMoreProjects = (isInitialLoad = false) => {
+  const newCards = renderProjectsBatch();
+  
+  if (!isInitialLoad) {
+    scrollToFirstNewCard(newCards);
+  }
+};
 
-// Перші проєкти при завантаженні
-loadMoreProjects();
+// Перше завантаження без скролу
+loadMoreProjects(true);
+
+// Клік по кнопці
+loadMoreBtn.addEventListener("click", () => loadMoreProjects());

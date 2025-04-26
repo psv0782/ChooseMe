@@ -1,29 +1,28 @@
 .footer {
     padding: 40px 20px;
+    background-color: #ffffff;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer-container {
-    
-    
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
-    margin-bottom: 40px;
+    flex-direction: column;
 }
 
 .footer-logo {
     font-weight: 400;
-        font-size: 32px;
-        line-height: 1;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1a1a1a;
 }
 
 .footer-logo-bold {
     font-weight: 700;
-    color: #1a1a1a;
 }
 
 .footer__logo-green {
@@ -31,72 +30,66 @@
     color: #00b068;
 }
 
+
 .footer-socials {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 .link-social {
     font-weight: 300;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.03em;
-        color: #292929;
+    font-size: 16px;
+    color: #292929;
+    transition: color 0.3s;
 }
 
-.footer-socials a:hover {
+.link-social:hover {
     color: #2f9e44;
 }
 
 .footer-copyright {
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 14px;
     color: #292929;
     text-align: center;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
+
 }
 
 /* Tablet */
 @media (min-width: 768px) {
-
-    .br {
-        display: none;
+    .footer {
+        padding: 60px 32px;
     }
+
     .footer-container {
+        /* flex-direction: row; */
         
-        gap: 20px 40px;
-        align-items: flex-start;
+    }
+
+    .footer-right {
+        align-items: flex-end;
+        margin-top: 0;
     }
 
     .footer-socials {
         flex-direction: row;
         gap: 32px;
+       
     }
 
     .footer-copyright {
         text-align: right;
-        font-size: 16px;
-        margin-top: 10px;
     }
 }
 
 /* Desktop */
 @media (min-width: 1280px) {
-    .footer {
-        padding: 60px 40px;
-    }
-
     .footer-container {
-        
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
 }

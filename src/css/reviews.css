@@ -101,7 +101,7 @@
 
 .arr-btn {
   stroke: var(--black);
-  fill: var(--black);
+  fill: none;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -138,7 +138,7 @@
 @media only screen and (min-width: 768px) {
   .review-text {
     width: 640px;
-    height: 96px;
+    /* height: 96px; */
     font-size: 16px;
   }
 }

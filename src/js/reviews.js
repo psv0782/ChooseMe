@@ -41,7 +41,7 @@ const swiper = new Swiper('.swiper', {
 // отримаємо всі відгуки з API
 async function getReviews() {
   try {
-    const { data } = await axios.get('/reviews1');
+    const { data } = await axios.get('/reviews');
     return data;
   } catch (error) {
     console.log('Error fetching reviews');

@@ -78,5 +78,5 @@ async function displayReviews() {
 }
 
 function showError() {
-  errorReviews.classList.remove('hidden');
+  errorReviews.classList.remove('visually-hidden');
 }

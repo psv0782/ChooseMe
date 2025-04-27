@@ -39,11 +39,10 @@
 }
 
 .nav-desktop a {
-    text-decoration: none;
     color: #1a1a1a;
-    font-weight: 500;
-    margin-left: 2rem;
-    transition: color 0.2s ease;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
 }
 
 .nav-desktop a:hover {
@@ -169,6 +168,10 @@
     .nav-desktop {
         display: flex;
         font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        gap: 40px;
     }
 
     .mobile-menu {
@@ -180,8 +183,9 @@
 
     
 
-    .nav-desktop {
-        gap: 3rem;
-        font-size: 1.1rem;
+    .nav-desktop a {
+        display: flex;
+        gap: 40px;
+        font-size: 16px;
     }
 }

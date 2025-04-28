@@ -1,0 +1,45 @@
+<!-- Header -->
+<header class="header">
+  <div class="container header-container">
+    <a href="/" class="logo">
+      <span class="logo-black">LLOYD</span><span class="logo-green">JEFFERSON.</span>
+    </a>
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-desktop">
+      <a href="#about">About me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+
+    <!-- Mobile Menu Button with SVG -->
+    <button id="menuBtn" class="menu-icon" aria-label="Відкрити меню">
+      <svg width="32" height="32">
+        <use href="/img/icons.svg#menu-open"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu Modal -->
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/" class="logo logo-modal">
+    <span class="logo-black">LLOYD</span><span class="logo-green">JEFFERSON.</span>
+  </a>
+  <button id="closeBtn" class="close-icon" aria-label="Закрити меню">
+    <svg width="32" height="32">
+      <use href="/img/icons.svg#menu-close"></use>
+    </svg>
+  </button>
+
+  <nav class="mobile-nav">
+    <a href="#about" class="mobile-link">About me</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contacts" class="mobile-link">Contacts</a>
+  </nav>
+</div>

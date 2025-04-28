@@ -179,6 +179,7 @@
     z-index: -1;
   }
 }
+
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .about-bio::after {
     background-image: url(/img/webp/t-about-bg@2x.webp);
@@ -195,6 +196,7 @@
     left: 100px;
   }
 }
+
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .about-bio::after {
     background-image: url(/img/webp/d-about-bg@2x.webp);

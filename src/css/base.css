@@ -46,6 +46,7 @@ section:last-child {
   section {
     padding: 62px 0;
   }
+
   section:last-child {
     padding-bottom: 124px;
   }
@@ -56,6 +57,7 @@ section:last-child {
   section {
     padding: 82px 0;
   }
+
   section:last-child {
     padding-bottom: 164px;
   }

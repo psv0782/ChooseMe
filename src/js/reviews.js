@@ -2,6 +2,7 @@ import axios from 'axios';
 
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
+
 Swiper.use([Navigation, Keyboard]);
 import 'swiper/css';
 
@@ -37,6 +38,7 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
+
 // отримаємо всі відгуки з API
 async function getReviews() {
   try {
@@ -48,6 +50,7 @@ async function getReviews() {
     btnHide();
   }
 }
+
 //рендер відгуків
 function renderReviews(reviews) {
   const markup = reviews
@@ -63,7 +66,7 @@ function renderReviews(reviews) {
 
             </div>
           </li>
-        `
+        `,
     )
     .join('');
 
@@ -82,6 +85,7 @@ async function displayReviews() {
 function showError() {
   errorReviews.classList.remove('visually-hidden');
 }
+
 function btnHide() {
   hideBtn.classList.add('visually-hidden');
 }

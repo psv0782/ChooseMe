@@ -8,10 +8,49 @@
     <script type="module" crossorigin src="/ChooseMe/index.js"></script>
     <link rel="modulepreload" crossorigin href="/ChooseMe/assets/vendor-D5tVdYkC.js">
     <link rel="stylesheet" crossorigin href="/ChooseMe/assets/vendor-DHBATib1.css">
-    <link rel="stylesheet" crossorigin href="/ChooseMe/assets/index-B2wYub65.css">
+    <link rel="stylesheet" crossorigin href="/ChooseMe/assets/index-DTlgYfGN.css">
   </head>
   <body class="light">
-    
+    <!-- Header -->
+<header class="header">
+  <div class="container header-container">
+    <a href="/" class="logo">
+      <span class="logo-black">LLOYD</span><span class="logo-green">JEFFERSON.</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-desktop">
+      <a href="#about">About me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+
+    <!-- Mobile Menu Button with SVG -->
+    <button id="menuBtn" class="menu-icon" aria-label="Відкрити меню">
+      <svg width="32" height="32">
+        <use href="../img/icons.svg#menu-open"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu Modal -->
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/" class="logo logo-modal">
+    <span class="logo-black">LLOYD</span><span class="logo-green">JEFFERSON.</span>
+  </a>
+  <button id="closeBtn" class="close-icon" aria-label="Закрити меню">
+    <svg width="32" height="32">
+      <use href="../img/icons.svg#menu-close"></use>
+    </svg>
+  </button>
+
+  <nav class="mobile-nav">
+    <a href="#about" class="mobile-link">About me</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contacts" class="mobile-link">Contacts</a>
+  </nav>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
@@ -440,7 +479,15 @@
   </div>
 </section>
 
-      
+      <section class="projects-section">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="bold">MY</span> <span class="green">PROJECTS</span>
+    </h2>
+    <ul class="projects-list" id="projectsList"></ul>
+    <button class="load-more" id="loadMoreBtn">LOAD MORE</button>
+  </div>
+</section>
       
       
       <section class="reviews">
@@ -471,7 +518,25 @@
       
     </main>
 
-    
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-container">
+      <a href="#" class="footer-logo">
+        <span class="footer-logo-black">LLOYD</span><span class="footer-logo-green">JEFFERSON.</span>
+      </a>
+      <ul class="footer-socials">
+        <li><a class="link-social" href="https://www.instagram.com/goitclub/" target="_blank">Instagram</a></li>
+        <li><a class="link-social" href="https://www.facebook.com/goITclub/" target="_blank">Facebook</a></li>
+        <li><a class="link-social" href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            target="_blank">Linkedin</a></li>
+        <li><a class="link-social" href="https://github.com/psv0782/ChooseMe" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+    <p class="footer-copyright">
+      © Copyright 2024. <br class="made">Made by LloydJefferson
+    </p>
+  </div>
+</footer>
 
   </body>
 </html>

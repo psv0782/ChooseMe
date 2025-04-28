@@ -3,16 +3,9 @@
     display: none;
  }
  .together-title {
-     /* font-family: "Impact", sans-serif; */
-     /* font-weight: 400; */
-     font-size: 52px;
-     line-height: 1.23;
-     /* letter-spacing: 0.03em;
-     text-transform: uppercase; */
      color: #292929;
      margin-bottom: 40px;
-     /* margin-top: 80px; */
- }
+   }
 
  .together-style {
     color: var(--accet-green);
@@ -29,14 +22,12 @@
  }
 
  .text-contacts {
-    /* font-family: "Poppins", sans-serif; */
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
-    /* letter-spacing: 0.03em; */
-    text-transform: uppercase;
-    color: var(--black);
-    padding-bottom: 32px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.6;
+   text-transform: uppercase;
+   color: var(--black);
+   padding-bottom: 32px;
  }
 
  .addr {
@@ -45,6 +36,9 @@
 
  .addr-item {
     padding-bottom: 16px;
+ }
+ .addr-item:last-child {
+    padding-bottom: 0px;
  }
 
  .addr-item-link {
@@ -76,7 +70,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 16px;
-    width: 100%;
+    width: 320px;
     background-color: var(--light-grey);
     border: none;
     border-radius: 8px;
@@ -95,7 +89,7 @@
  .form-user-comment {
     padding-left: 16px;
     padding-top: 16px;
-    width: 100%;
+    width: 320px;
     height: 128px;
     border: none;
     border-radius: 8px;
@@ -112,16 +106,15 @@
     text-align: center;
     color: var(--white);
     border-radius: 8px;
-    background: var(--accet-green);
+    background-color: var(--accet-green);
     border: none;
     width: 340px;
     height: 48px;
     margin-top: 32px;
-    /* margin-bottom: 80px; */
- }
+}
 
  .together-btn:hover {
-    background: var(--hover-green);
+    background-color: var(--hover-green);
  }
 
  @media screen and (min-width: 768px) {
@@ -137,20 +130,19 @@
     }
 
     .together-title {
-        /* margin-top: 124px; */
         margin-bottom: 60px;
-        margin-right: 197px;
         font-size: 108px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        width: 507px;
-     }
+    }
 
     .together-contacts {
        margin-bottom: 60px;
-}
+       }
+
      .text-contacts {
         font-size: 20px;
+        width: 500px;
      }
 
      .addr-list {
@@ -172,7 +164,6 @@
         width: 704px;
     }
      .together-btn {
-        /* margin-bottom: 124px; */
         width: 173px;
      }
 
@@ -189,11 +180,11 @@
         height: 408px;
         margin-right: 0;
         }
+
      .together-title {
         margin-bottom: 80px;
-        margin-right: 183px;
-        width: 507px;
-     }
+        margin-right: 687px;
+      }
 
      .work-together {
         display: flex;
@@ -215,6 +206,14 @@
     .form-container {
         width: 592px;
     }
+    .together-input-email {
+      width: 592px;
+    }
+
+   .form-user-comment {
+      width: 592px;
+
+   }
 
  }
 
@@ -262,20 +261,16 @@
 
 .modal-title {
     color: var(--accet-green);
-    /* font-weight: 400; */
+    font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
-    /* letter-spacing: 0.03em;
-    text-transform: uppercase; */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     text-align: center;
     margin-bottom: 16px;
 }
 
 .modal-text {
-    /* font-weight: 300;
-    font-size: 16px; */
-    /* line-height: 1.5;
-    letter-spacing: 0.03em; */
     text-align: center;
     color: var(--black);
     text-transform: none;

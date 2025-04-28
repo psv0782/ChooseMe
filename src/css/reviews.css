@@ -30,7 +30,15 @@
   border-radius: 16px !important;
   padding: 32px;
   width: 296px !important;
-  background: var(--light-grey);
+  background-color: var(--light-grey);
+}
+.dark .swiper-slide {
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px !important;
+  padding: 32px;
+  /* width: 296px !important; */
+  background-color: #2a2d32;
 }
 @media only screen and (min-width: 768px) {
   .swiper-slide {
@@ -52,7 +60,6 @@
   border-radius: 8px;
   width: 40px !important;
   height: 40px !important;
-  /* position: unset !important; */
   margin-top: 20px !important;
 }
 .dark .swiper-button-next,
@@ -65,8 +72,8 @@
   border-radius: 8px;
   width: 40px !important;
   height: 40px !important;
-  /* position: unset !important; */
   margin-top: 20px !important;
+  background-color: var(--black);
 }
 
 .swiper-btns {
@@ -74,17 +81,7 @@
   justify-content: right;
   gap: 24px;
 }
-.swiper-button-prev.disabled,
-.swiper-button-next.disabled {
-  border: 1px solid var(--light-grey);
-  border-radius: 8px;
-  padding: 12px;
-  width: 48px;
-  height: 48px;
-  opacity: 0.5;
-  pointer-events: none;
-  cursor: default;
-}
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover,
 .swiper-button-prev:focus,
@@ -95,7 +92,7 @@
 .dark .swiper-button-next:hover,
 .dark .swiper-button-prev:focus,
 .dark .swiper-button-next:focus {
-  background-color: #2a2d32;
+  background-color: #3b3f45;
 }
 
 .swiper-button-disabled {
@@ -107,6 +104,16 @@
   opacity: 0.5;
   pointer-events: none;
   cursor: default;
+}
+.dark .swiper-button-disabled {
+  border-radius: 8px;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  opacity: 0.1;
+  pointer-events: none;
+  cursor: default;
+  background-color: var(--black);
 }
 
 .arr-btn {
@@ -153,7 +160,7 @@
 .dark .review-text {
   display: flex;
   align-items: center;
-  width: 256px;
+  /* width: 256px; */
   height: 168px;
   font-family: var(--font-family);
   font-weight: 300;

@@ -7,6 +7,7 @@ import 'swiper/css';
 
 const reviewsWrap = document.querySelector('#reviews-container');
 const errorReviews = document.querySelector('.error-message');
+const hideBtn = document.querySelector('.swiper-btns');
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
@@ -44,6 +45,7 @@ async function getReviews() {
   } catch (error) {
     console.log('Error fetching reviews');
     showError();
+    btnHide();
   }
 }
 //рендер відгуків
@@ -78,5 +80,8 @@ async function displayReviews() {
 }
 
 function showError() {
-  errorReviews.classList.remove('hidden');
+  errorReviews.classList.remove('visually-hidden');
+}
+function btnHide() {
+  hideBtn.classList.add('visually-hidden');
 }

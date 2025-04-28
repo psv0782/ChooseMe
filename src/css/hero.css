@@ -1,193 +1,193 @@
 .hero-area {
-    position: relative;
-    background-color: var(--white);
-    background-image: url(/img/webp/m-hero-bg.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 320px 704px;
-    z-index: -2;
+  position: relative;
+  background-color: var(--white);
+  background-image: url(/img/webp/m-hero-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px 704px;
+  z-index: -2;
 }
 
 @media screen and (min-resolution: 192dpi) {
-    .hero-area {
-        background-image: url(/img/webp/m-hero-bg@2x.webp);
-    }
+  .hero-area {
+    background-image: url(/img/webp/m-hero-bg@2x.webp);
+  }
 }
 
 .hero-title {
-    padding-top: 96px;
-    margin-bottom: 40px;
+  padding-top: 96px;
+  margin-bottom: 40px;
 }
 
 .hero-photo {
-    display: none;
+  display: none;
 }
 
 .hero-accent {
-    color: var(--accet-green);
+  color: var(--accet-green);
 }
 
 .hero-order {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 320px;
-    height: 92px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 92px;
 }
 
 .hero-icon {
-    fill: var(--accet-green);
-    margin-right: 12px;
+  fill: var(--accet-green);
+  margin-right: 12px;
 }
 
 .hero-link {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--black);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
 }
 
 .hero-link::after {
-    position: absolute;
-    content: '';
-    width: 165px;
-    height: 92px;
-    border-radius: 16px;
-    background-color: var(--light-accet);
-    top: 0;
-    left: 155px;
-    z-index: -1;
+  position: absolute;
+  content: '';
+  width: 165px;
+  height: 92px;
+  border-radius: 16px;
+  background-color: var(--light-accet);
+  top: 0;
+  left: 155px;
+  z-index: -1;
 }
 
 .hero-order:hover .hero-link::after,
 .hero-order:focus .hero-link::after {
-    background-color: var(--accet-green);
+  background-color: var(--accet-green);
 }
 
 .hero-descr {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-top: 40px;
-    margin-bottom: 56px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 56px;
 }
 
 .hero-media-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    background-color: var(--light-grey);
-    padding-top: 32px;
-    padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: var(--light-grey);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .hero-media-link {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
 
 .hero-media-link:hover,
 .hero-media-link:hover {
-    color: var(--accet-green);
+  color: var(--accet-green);
 }
 
 @media screen and (min-width: 768px) {
-    .hero-area {
-        background-image: url(/img/webp/t-hero-bg.webp);
-        background-size: 704px 896px;
-    }
+  .hero-area {
+    background-image: url(/img/webp/t-hero-bg.webp);
+    background-size: 704px 896px;
+  }
 
-    .hero-title {
-        font-weight: 400;
-        font-size: 136px;
-        line-height: 115%;
-        letter-spacing: 0.01em;
-        margin-bottom: 60px;
-    }
+  .hero-title {
+    font-weight: 400;
+    font-size: 136px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+    margin-bottom: 60px;
+  }
 
-    .hero-order {
-        width: 320px;
-        height: 92px;
-    }
+  .hero-order {
+    width: 320px;
+    height: 92px;
+  }
 
-    .hero-link {
-        font-size: 20px;
-        line-height: 160%;
-    }
+  .hero-link {
+    font-size: 20px;
+    line-height: 160%;
+  }
 
-    .hero-link::after {
-        width: 261px;
-        height: 96px;
-    }
+  .hero-link::after {
+    width: 261px;
+    height: 96px;
+  }
 
-    .hero-descr {
-        font-size: 20px;
-        line-height: 160%;
-    }
+  .hero-descr {
+    font-size: 20px;
+    line-height: 160%;
+  }
 
-    .hero-media-list {
-        flex-direction: row;
-        gap: 40px;
-        padding: 40px 146px;
-    }
+  .hero-media-list {
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px 146px;
+  }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .hero-area {
-        background-image: url(/img/webp/t-hero-bg@2x.webp);
-    }
+  .hero-area {
+    background-image: url(/img/webp/t-hero-bg@2x.webp);
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .hero-area {
-        position: relative;
-        background-image: url(/img/webp/d-hero-bg.webp);
-        background-size: 1216px 772px;
-    }
+  .hero-area {
+    position: relative;
+    background-image: url(/img/webp/d-hero-bg.webp);
+    background-size: 1216px 772px;
+  }
 
-    .hero-title {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-    }
+  .hero-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 
-    .hero-photo {
-        display: block;
-        width: 108px;
-        height: 108px;
-        margin-left: 40px;
-    }
+  .hero-photo {
+    display: block;
+    width: 108px;
+    height: 108px;
+    margin-left: 40px;
+  }
 
-    .hero-info {
-        display: flex;
-        gap: 136px;
-        align-items: center;
-        margin-bottom: 116px;
-    }
+  .hero-info {
+    display: flex;
+    gap: 136px;
+    align-items: center;
+    margin-bottom: 116px;
+  }
 
-    .hero-order {
-        margin-left: 72px;
-        width: 416px;
-        height: 96px;
-    }
+  .hero-order {
+    margin-left: 72px;
+    width: 416px;
+    height: 96px;
+  }
 
-    .hero-descr {
-        width: 592px;
-    }
+  .hero-descr {
+    width: 592px;
+  }
 
-    .hero-media-list {
-        padding: 40px 402px;
-    }
+  .hero-media-list {
+    padding: 40px 402px;
+  }
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-    .hero-area {
-        background-image: url(/img/webp/d-hero-bg@2x.webp);
-    }
+  .hero-area {
+    background-image: url(/img/webp/d-hero-bg@2x.webp);
+  }
 }

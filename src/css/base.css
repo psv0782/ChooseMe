@@ -1,4 +1,3 @@
-
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
@@ -47,6 +46,7 @@ section:last-child {
   section {
     padding: 62px 0;
   }
+
   section:last-child {
     padding-bottom: 124px;
   }
@@ -57,12 +57,13 @@ section:last-child {
   section {
     padding: 82px 0;
   }
+
   section:last-child {
     padding-bottom: 164px;
   }
 }
 
-h1{
+h1 {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 64px;

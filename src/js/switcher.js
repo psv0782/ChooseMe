@@ -1,5 +1,4 @@
 const themeToggle = document.getElementById('theme-toggle');
-
 // Перевірити чи є вже збережена тема
 if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark');

@@ -251,3 +251,58 @@
             transition: background 0.3s;
     }
 }
+
+
+/* === DARK THEME === */
+
+body.dark .section-title {
+    color: var(--white);
+    
+}
+
+body.dark .bold {
+    color: var(--white);
+   
+}
+
+body.dark .green {
+    color: var(--accet-green);
+    
+}
+
+body.dark .icon-project {
+    stroke: var(--accet-green);
+    
+}
+
+body.dark .project-tech {
+    color: var(--white);
+    
+}
+
+body.dark .project-btn {
+    background-color: #3b3f45;
+    
+    color: var(--white);
+    
+}
+
+body.dark .project-btn:hover {
+    background-color: var(--hover-green);
+    
+    color: var(--black);
+}
+
+body.dark .load-more {
+    color: var(--white);
+  
+}
+
+body.dark .load-more::after {
+    background-color: var(--accet-green);
+    
+}
+
+body.dark .load-more:hover {
+    color: var(--hover-green);
+}

@@ -1,7 +1,7 @@
 .hero-area {
   position: relative;
   background-color: var(--white);
-  background-image: url(/img/webp/m-hero-bg.webp);
+  background-image: url(../img/webp/m-hero-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 320px 704px;
@@ -10,7 +10,7 @@
 
 @media screen and (min-resolution: 192dpi) {
   .hero-area {
-    background-image: url(/img/webp/m-hero-bg@2x.webp);
+    background-image: url(../img/webp/m-hero-bg@2x.webp);
   }
 }
 
@@ -99,7 +99,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-area {
-    background-image: url(/img/webp/t-hero-bg.webp);
+    background-image: url(../img/webp/t-hero-bg.webp);
     background-size: 704px 896px;
   }
 
@@ -140,14 +140,14 @@
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-area {
-    background-image: url(/img/webp/t-hero-bg@2x.webp);
+    background-image: url(../img/webp/t-hero-bg@2x.webp);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero-area {
     position: relative;
-    background-image: url(/img/webp/d-hero-bg.webp);
+    background-image: url(../img/webp/d-hero-bg.webp);
     background-size: 1216px 772px;
   }
 
@@ -188,6 +188,6 @@
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .hero-area {
-    background-image: url(/img/webp/d-hero-bg@2x.webp);
+    background-image: url(../img/webp/d-hero-bg@2x.webp);
   }
 }

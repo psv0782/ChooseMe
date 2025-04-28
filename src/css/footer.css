@@ -96,3 +96,36 @@
             justify-content: space-between;
         }
 }
+
+
+/* === DARK THEME === */
+
+body.dark .footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* Тонка світла лінія */
+}
+
+body.dark .footer-logo-green {
+    color: var(--accet-green);
+   
+}
+
+body.dark .link-social {
+    color: var(--white);
+    
+}
+
+body.dark .link-social:hover {
+    color: var(--accet-green)
+   
+}
+
+body.dark .footer-logo-black {
+    color: var(--white);
+    
+}
+
+body.dark .footer-copyright {
+    color: var(--white);
+    
+}

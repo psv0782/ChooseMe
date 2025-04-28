@@ -195,3 +195,57 @@
         font-size: 16px;
     }
 }
+
+
+
+
+
+/* === DARK THEME === */
+
+body.dark {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Логотип у темній темі */
+body.dark .logo-black {
+    color: var(--white);
+}
+
+body.dark .logo-green {
+    color: var(--accet-green);
+}
+
+/* Навігація desktop */
+body.dark .nav-desktop a {
+    color: var(--white);
+}
+
+body.dark .nav-desktop a:hover {
+    color: var(--hover-green);
+}
+
+/* Кнопки меню */
+body.dark .menu-icon svg,
+body.dark .close-icon svg {
+    stroke: var(--white);
+}
+
+body.dark .menu-icon:hover svg,
+body.dark .close-icon:hover svg {
+    stroke: var(--hover-green);
+}
+
+/* Мобільне меню */
+body.dark .mobile-menu {
+    background-color: var(--black);
+}
+
+/* Посилання в мобільному меню */
+body.dark .mobile-link {
+    color: var(--white);
+}
+
+body.dark .mobile-link:hover {
+    color: var(--hover-green);
+}

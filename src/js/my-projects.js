@@ -1,6 +1,6 @@
-import icon from "../img/icons.svg";
-import project3 from '../img/project3.jpg';
-import project3_2x from '../img/project3@2x.jpg';
+import icon from "./img/icons.svg";
+import project3 from './img/project3.jpg';
+import project3_2x from './img/project3@2x.jpg';
 
 const projects = [
   {

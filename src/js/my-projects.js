@@ -1,9 +1,13 @@
+import icon from "../img/icons.svg";
+import project3 from '../img/project3.jpg';
+import project3_2x from '../img/project3@2x.jpg';
+
 const projects = [
   {
     title: 'Wallet webservice',
     tech: 'React, JavaScript, Node JS, Git',
-    image1x: './img/project3.jpg',
-    image2x: './img/project3@2x.jpg',
+    image1x: project3,
+    image2x: project3_2x,
     alt: 'Wallet webservice',
     link: '#',
   },
@@ -102,7 +106,7 @@ const createProjectCard = (project) => {
       <a href="${project.link}" class="project-btn" target="_blank" rel="noopener noreferrer">
         VISIT
         <svg class="icon-project" width="18" height="18">
-          <use href="./img/icons.svg#arrow-visit"></use>
+          <use href="${icon}#arrow-visit"></use>
         </svg>
       </a>
     </div>

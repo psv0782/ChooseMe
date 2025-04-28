@@ -6,6 +6,56 @@
 .no-scroll {
     overflow: hidden;
 }
+/* Стилізація переключателя */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--accet-green);
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Коли переключено */
+input:checked+.slider {
+    background-color: var(--light-grey);
+}
+
+input:checked+.slider::before {
+    transform: translateX(24px);
+    background-color: var(--accet-green)
+    /* Яскраво зелений у темній темі */
+}
+
+/* Темна тема: змінити кольори самого перемикача */
+body.dark .slider {
+    background-color: var(--light-grey);
+}
 
 /* === HEADER === */
 .header {

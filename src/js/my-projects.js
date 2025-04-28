@@ -82,7 +82,7 @@ const projects = [
 ];
 
 let currentIndex = 0;
-const batchSize = 2;
+const batchSize = 3;
 
 const projectsList = document.getElementById("projectsList");
 const loadMoreBtn = document.getElementById("loadMoreBtn");

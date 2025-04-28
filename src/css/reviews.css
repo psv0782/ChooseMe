@@ -5,7 +5,6 @@
   line-height: 115%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-
   margin: 0 0 40px;
   font-weight: 400;
   text-align: center;
@@ -41,7 +40,6 @@
   flex-direction: row;
   border-radius: 16px !important;
   padding: 32px;
-  /* width: 296px !important; */
   background-color: #2a2d32;
 }
 
@@ -140,7 +138,6 @@
 
 .review-card {
   display: flex;
-
   flex: 1;
   justify-content: space-between;
   flex-direction: column;
@@ -171,7 +168,6 @@
 .dark .review-text {
   display: flex;
   align-items: center;
-  /* width: 256px; */
   height: 168px;
   font-family: var(--font-family);
   font-weight: 300;

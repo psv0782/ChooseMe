@@ -1,4 +1,3 @@
-
 .projects-section {
   padding: 40px 20px;
   text-align: center;
@@ -16,13 +15,11 @@
 }
 
 .bold {
-
   font-weight: bold;
   color: var(--black);
 }
 
 .green {
-
   color: var(--accet-green);
 }
 
@@ -141,7 +138,6 @@
   color: var(--hover-green);
 }
 
-
 /* ===== TABLET ===== */
 @media (min-width: 768px) {
   .projects-section {
@@ -194,7 +190,6 @@
     gap: 20px;
     margin-bottom: 16px;
   }
-
 
   .project-btn {
     font-family: var(--font-family);
@@ -251,55 +246,43 @@
   }
 }
 
-
 /* === DARK THEME === */
-
 body.dark .section-title {
   color: var(--white);
-
 }
 
 body.dark .bold {
   color: var(--white);
-
 }
 
 body.dark .green {
   color: var(--accet-green);
-
 }
 
 body.dark .icon-project {
   stroke: var(--accet-green);
-
 }
 
 body.dark .project-tech {
   color: var(--white);
-
 }
 
 body.dark .project-btn {
   background-color: #3b3f45;
-
   color: var(--white);
-
 }
 
 body.dark .project-btn:hover {
   background-color: var(--hover-green);
-
   color: var(--black);
 }
 
 body.dark .load-more {
   color: var(--white);
-
 }
 
 body.dark .load-more::after {
   background-color: var(--accet-green);
-
 }
 
 body.dark .load-more:hover {

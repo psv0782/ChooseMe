@@ -12,9 +12,7 @@
   background-color: #00b068;
   transition: all 0.3s ease;
   opacity: 0;
-  /* visibility: hidden; */
   pointer-events: none;
-  /* -webkit-tap-highlight-color: transparent; */
   outline: none;
 }
 
@@ -26,7 +24,7 @@
 }
 
 /* Dark theme */
-html._dark .rollup {
+.dark .rollup {
   background-color: #14c57c;
 }
 
@@ -36,8 +34,8 @@ html._dark .rollup {
 }
 
 /* Dark theme */
-html._dark .rollup:hover,
-html._dark .rollup:focus {
+.dark .rollup:hover,
+.dark .rollup:focus {
   background-color: #009156;
 }
 

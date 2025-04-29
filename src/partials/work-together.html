@@ -1,0 +1,79 @@
+<!-- Work together -->
+<section class="together-section" id="work-together">
+    <div class="container together-container">
+        <img class="img-together" src="./img/webp/t-work-bg.webp"
+            srcset="./img/webp/t-work-bg.webp 1x, ./img/webp/t-work-bg@2x.webp 2x" />
+        <h2 class="together-title">
+            let’s <span class="together-style">work together</span>
+        </h2>
+       
+        <div class="work-together">
+            <div class="together-contacts">
+                <p class="text-contacts">Contact me to transform your ideas into exceptional solutions.</p>
+                <address class="addr">
+                    <ul class="addr-list">
+                        <li class="addr-item">
+                            <a class="addr-item-link" href="tel:+380904567890">
+                                <svg class="icons-together" width="24" height="16">
+                                    <use href="./img/icons.svg#phone"></use>
+                                </svg>
+                                +38 090 456 78 90
+                            </a>
+                        </li>
+                        <li class="addr-item">
+                            <a class="addr-item-link" href="mailto:lloydjefferson@gmail.com">
+                                <svg class="icons-together" width="24" height="16">
+                                    <use href="./img/icons.svg#mail"></use>
+                                </svg>
+                            lloydjefferson@gmail.com
+                            </a>
+                        </li>
+                        <li class="addr-item">
+                            <a class="addr-item-link" href="https://www.google.com/maps?q=New+York,+USA"
+                                target="_blank">
+                                <svg class="icons-together" width="24" height="16">
+                                    <use href="./img/icons.svg#location"></use>
+                                </svg>
+                                USA, New York
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="form-container">
+                <form class="together-form">
+                    <div class="together-input">
+                        <label class="together-label" for="email">
+                            <input class="together-input-email" type="email" id="email" name="email" required
+                                placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
+                        </label>
+                    </div>
+
+                    <div class="together-form-com">
+                        <label class="form-user-label" for="comment"></label>
+                        <textarea class="form-user-comment" id="comment" name="comment" placeholder="Message"
+                            required></textarea>
+                    </div>
+
+                    <button class="together-btn" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+              <!-- Modal window -->
+<div class="modal-backdrop hidden" id="modal-backdrop">
+    <div class="modal" id="modal">
+       <button class="modal-close-btn" id="modal-close" type="button">
+            <svg class="modal-close-icon" width="24" height="24">
+                 <use href="./img/icons.svg#menu-close"></use>
+            </svg>
+        </button>
+       
+        <p class="modal-title">Thank you for your interest in cooperation!</p>
+        <p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+       
+    </div>
+</div>

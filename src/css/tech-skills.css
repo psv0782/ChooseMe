@@ -20,11 +20,19 @@
   z-index: 2;
 }
 
+.dark .marquee {
+  background-color: var(--dark-accet-dt);
+}
+
 .rotate {
   position: relative;
   background-color: var(--light-grey);
   transform: rotate(2deg);
   z-index: 1;
+}
+
+.dark .rotate {
+  background-color: var(--charcoal-dt);
 }
 
 .marquee-line {
@@ -46,7 +54,7 @@
   animation-timing-function: linear;
 }
 
-.skills:hover .marquee-line {
+.marquee-line:hover {
   animation-play-state: paused;
 }
 
@@ -71,7 +79,7 @@
   align-items: center;
 }
 
-.marquee .rotate .skills-text {
+.rotate .skills-text {
   color: var(--accet-green);
 }
 
@@ -80,8 +88,12 @@
   border-radius: 2px;
 }
 
-.marquee .rotate .dot {
+.rotate .dot {
   fill: var(--black);
+}
+
+.dark .rotate .dot {
+  fill: var(--white);
 }
 
 @media screen and (min-width: 768px) {

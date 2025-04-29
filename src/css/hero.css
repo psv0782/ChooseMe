@@ -1,6 +1,5 @@
 .hero-area {
   position: relative;
-  background-color: var(--white);
   background-image: url(../img/webp/m-hero-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -50,6 +49,10 @@
   color: var(--black);
 }
 
+.dark .hero-link {
+  color: var(--white);
+}
+
 .hero-link::after {
   position: absolute;
   content: '';
@@ -65,6 +68,15 @@
 .hero-order:hover .hero-link::after,
 .hero-order:focus .hero-link::after {
   background-color: var(--accet-green);
+}
+
+.dark .hero-link::after {
+  background-color: var(--accet-green);
+}
+
+.dark .hero-order:hover .hero-link::after,
+.dark .hero-order:focus .hero-link::after {
+  background-color: var(--hover-green);
 }
 
 .hero-descr {
@@ -88,12 +100,16 @@
   padding-bottom: 32px;
 }
 
+.dark .hero-media-list {
+  background-color: var(--charcoal-dt);
+}
+
 .hero-media-link {
   font-family: var(--font-family);
 }
 
 .hero-media-link:hover,
-.hero-media-link:hover {
+.hero-media-link:focus {
   color: var(--accet-green);
 }
 

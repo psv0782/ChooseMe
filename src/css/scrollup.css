@@ -24,7 +24,7 @@
 }
 
 /* Dark theme */
-html._dark .rollup {
+.dark .rollup {
   background-color: #14c57c;
 }
 
@@ -34,8 +34,8 @@ html._dark .rollup {
 }
 
 /* Dark theme */
-html._dark .rollup:hover,
-html._dark .rollup:focus {
+.dark .rollup:hover,
+.dark .rollup:focus {
   background-color: #009156;
 }
 

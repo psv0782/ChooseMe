@@ -58,10 +58,6 @@ body.dark .slider {
 }
 
 /* === HEADER === */
-.header {
-  padding: 20px;
-}
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -187,7 +183,7 @@ body.dark .slider {
 .mobile-nav {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 24px;
   font-size: 1.5rem;
 }
 

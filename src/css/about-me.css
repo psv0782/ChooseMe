@@ -1,3 +1,15 @@
+/* Styles for the base */
+:root {
+  --charcoal-dt: #2a2d32;
+  --dark-accet-dt: #204136;
+}
+
+.dark h3,
+.dark p {
+  color: var(--white);
+}
+
+/* Styles About Me */
 .about-title {
   text-align: left;
   margin-bottom: 40px;
@@ -173,7 +185,6 @@
     width: 100%;
     min-height: 252px;
     background-size: 336px 252px;
-    background-color: var(--white);
     background-image: url(../img/webp/t-about-bg.webp);
     background-repeat: no-repeat;
     z-index: -1;

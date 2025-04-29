@@ -1,0 +1,298 @@
+.hidden {
+  display: none !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Стилізація переключателя */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--accet-green);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Коли переключено */
+input:checked + .slider {
+  background-color: var(--light-grey);
+}
+
+input:checked + .slider::before {
+  transform: translateX(24px);
+  background-color: var(--accet-green)
+  /* Яскраво зелений у темній темі */
+}
+
+/* Темна тема: змінити кольори самого перемикача */
+body.dark .slider {
+  background-color: var(--light-grey);
+}
+
+/* === HEADER === */
+.header {
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.logo-black {
+  color: var(--black);
+}
+
+.logo-green {
+  color: var(--accet-green);
+}
+
+/* === DESKTOP NAV === */
+.nav-desktop {
+  display: none;
+}
+
+.nav-desktop a {
+  font-family: var(--font-family);
+  color: var(--black);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+}
+
+.nav-desktop a:hover {
+  color: var(--hover-green);;
+}
+
+/* === SVG ICON BUTTONS === */
+.menu-icon,
+.close-icon {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.menu-icon:hover,
+.close-icon:hover {
+  transform: scale(1.1);
+}
+
+/* SVG стилі */
+.menu-icon svg,
+.close-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--black);
+  stroke-width: 2;
+  fill: none;
+  display: block;
+  pointer-events: none;
+  transition: stroke 0.2s ease;
+}
+
+.menu-icon:hover svg,
+.close-icon:hover svg {
+  stroke: var(--hover-green);
+}
+
+/* === MOBILE MENU === */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background-color: var(--white);
+  background-image: url("../img/webp/m-hero-bg.webp");
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .mobile-menu {
+    background-image: url("../img/webp/m-hero-bg@2x.webp");
+  }
+}
+
+.mobile-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.logo-modal {
+  position: absolute;
+  top: 1.4rem;
+  left: 1.5rem;
+}
+
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.mobile-link {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+.mobile-link:hover {
+  color: var(--hover-green);;
+}
+
+/* === BREAKPOINTS === */
+@media (min-width: 768px) {
+  .header {
+    padding: 32px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .logo {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .nav-desktop {
+    display: flex;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    gap: 40px;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1280px) {
+
+
+  .nav-desktop a {
+    font-family: var(--font-family);
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+  }
+}
+
+/* === DARK THEME === */
+body.dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* Логотип у темній темі */
+body.dark .logo-black {
+  color: var(--white);
+}
+
+body.dark .logo-green {
+  color: var(--accet-green);
+}
+
+/* Навігація desktop */
+body.dark .nav-desktop a {
+  color: var(--white);
+}
+
+body.dark .nav-desktop a:hover {
+  color: var(--hover-green);
+}
+
+/* Кнопки меню */
+body.dark .menu-icon svg,
+body.dark .close-icon svg {
+  stroke: var(--white);
+}
+
+body.dark .menu-icon:hover svg,
+body.dark .close-icon:hover svg {
+  stroke: var(--hover-green);
+}
+
+/* Мобільне меню */
+body.dark .mobile-menu {
+  background-color: var(--black);
+}
+
+/* Посилання в мобільному меню */
+body.dark .mobile-link {
+  color: var(--white);
+}
+
+body.dark .mobile-link:hover {
+  color: var(--hover-green);
+}

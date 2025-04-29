@@ -1,0 +1,102 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.marquee {
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--light-accet);
+  width: 100%;
+  height: 104px;
+  z-index: 2;
+}
+
+.rotate {
+  position: relative;
+  background-color: var(--light-grey);
+  transform: rotate(2deg);
+  z-index: 1;
+}
+
+.marquee-line {
+  display: flex;
+  flex-shrink: 0;
+  padding: 32px 0px;
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  will-change: transform;
+  animation-name: marqueeLine;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.rotate .marquee-line {
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+.skills:hover .marquee-line {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeLine {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+
+.skills-item,
+.skills-dot {
+  display: flex;
+  align-items: center;
+}
+
+.marquee .rotate .skills-text {
+  color: var(--accet-green);
+}
+
+.dot {
+  fill: var(--accet-green);
+  border-radius: 2px;
+}
+
+.marquee .rotate .dot {
+  fill: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .marquee {
+    height: 128px;
+    align-items: center;
+  }
+
+  .marquee-line {
+    padding: 40px 0;
+  }
+
+  .skills-text {
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+  }
+}

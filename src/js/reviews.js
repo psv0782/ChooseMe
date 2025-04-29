@@ -2,11 +2,13 @@ import axios from 'axios';
 
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
+
 Swiper.use([Navigation, Keyboard]);
 import 'swiper/css';
 
 const reviewsWrap = document.querySelector('#reviews-container');
 const errorReviews = document.querySelector('.error-message');
+const hideBtn = document.querySelector('.swiper-btns');
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
@@ -22,13 +24,13 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    100: {
+    360: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
     768: {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 40,
     },
     1280: {
       slidesPerView: 2,
@@ -36,6 +38,7 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
+
 // отримаємо всі відгуки з API
 async function getReviews() {
   try {
@@ -44,8 +47,10 @@ async function getReviews() {
   } catch (error) {
     console.log('Error fetching reviews');
     showError();
+    btnHide();
   }
 }
+
 //рендер відгуків
 function renderReviews(reviews) {
   const markup = reviews
@@ -61,7 +66,7 @@ function renderReviews(reviews) {
 
             </div>
           </li>
-        `
+        `,
     )
     .join('');
 
@@ -78,5 +83,9 @@ async function displayReviews() {
 }
 
 function showError() {
-  errorReviews.classList.remove('hidden');
+  errorReviews.classList.remove('visually-hidden');
+}
+
+function btnHide() {
+  hideBtn.classList.add('visually-hidden');
 }

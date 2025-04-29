@@ -1,0 +1,54 @@
+.rollup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00b068;
+  transition: all 0.3s ease;
+  opacity: 0;
+  /* visibility: hidden; */
+  pointer-events: none;
+  /* -webkit-tap-highlight-color: transparent; */
+  outline: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .rollup {
+    bottom: 50px;
+    left: calc(53% + (1280px / 2));
+  }
+}
+
+/* Dark theme */
+html._dark .rollup {
+  background-color: #14c57c;
+}
+
+.rollup:hover,
+.icon-arrow-up:focus {
+  background-color: #009156;
+}
+
+/* Dark theme */
+html._dark .rollup:hover,
+html._dark .rollup:focus {
+  background-color: #009156;
+}
+
+.rollup.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.icon-arrow-up {
+  stroke: var(--white);
+  fill: none;
+  transform: rotate(-45deg);
+}

@@ -85,7 +85,7 @@
   .benefits-container {
     position: absolute;
     content: '';
-    background-image: url(./img/webp/m-hero-bg@2x.webp);
+    background-image: url(../img/webp/m-hero-bg@2x.webp);
     background-repeat: no-repeat;
   }
 
@@ -113,6 +113,6 @@
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .benefits-container {
-    background-image: url(./img/webp/d-benefits-bg@2x.webp);
+    background-image: url(../img/webp/d-benefits-bg@2x.webp);
   }
 }

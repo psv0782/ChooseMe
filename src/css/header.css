@@ -246,7 +246,7 @@ body.dark .slider {
 
 /* === DARK THEME === */
 body.dark {
-  background-color: var(--black);
+  background-color: var(--black-dt);
   color: var(--white);
 }
 
@@ -281,7 +281,7 @@ body.dark .close-icon:hover svg {
 
 /* Мобільне меню */
 body.dark .mobile-menu {
-  background-color: var(--black);
+  background-color: var(--black-dt);
 }
 
 /* Посилання в мобільному меню */

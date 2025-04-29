@@ -1,15 +1,3 @@
-/* Styles for the base */
-:root {
-  --charcoal-dt: #2a2d32;
-  --dark-accet-dt: #204136;
-  --black-dt: #1e2023;
-}
-
-.dark h3,
-.dark p {
-  color: var(--white);
-}
-
 /* Styles About Me */
 .about-title {
   text-align: left;

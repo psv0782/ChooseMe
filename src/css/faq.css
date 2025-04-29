@@ -77,7 +77,7 @@
   .title-div {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 220px;
   }
 
   .faq-title {
@@ -101,8 +101,8 @@
 Стилі першоджерела відключені в js файлі*/
 
 .ac {
-  border-bottom: 1px solid var(--color-light-grey);
-  background-color: var(--white);
+  border-bottom: 1px solid var(--light-grey);
+  background-color: transparent;
   box-sizing: border-box;
   padding: 28px 24px;
 }
@@ -159,7 +159,6 @@
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
-  margin-top: 24px;
 }
 
 .ac .ac-panel .ac-text {
@@ -179,6 +178,7 @@
 
 .ac.is-active .ac-panel {
   visibility: visible;
+  margin-top: 24px;
 }
 
 /* Styles for Tablet devices for accordion*/
@@ -200,4 +200,24 @@
 
 .dark .faq-title-span {
   color: #14c57c;
+}
+
+.dark .ac {
+  border-bottom-color: var(--white);
+}
+
+.dark .ac.is-active {
+  background-color: #204136;
+}
+
+.dark .ac-trigger:focus {
+  color: var(--white);
+}
+
+.dark .ac-trigger {
+  color: var(--white);
+}
+
+.dark .arrow-icon {
+  stroke: var(--white);
 }

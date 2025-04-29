@@ -12,9 +12,7 @@
   background-color: #00b068;
   transition: all 0.3s ease;
   opacity: 0;
-  /* visibility: hidden; */
   pointer-events: none;
-  /* -webkit-tap-highlight-color: transparent; */
   outline: none;
 }
 

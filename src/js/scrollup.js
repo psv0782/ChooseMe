@@ -1,6 +1,5 @@
 const buttonTop = document.querySelector('.rollup');
 
-// Hide/show the Back to Top button when scrolling the page
 window.addEventListener('scroll', function () {
   const windowScrollTop = window.scrollY;
   if (windowScrollTop > 100) {
@@ -14,7 +13,6 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// Scroll up
 buttonTop.addEventListener('click', event => {
   event.preventDefault();
   window.scrollTo({

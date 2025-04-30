@@ -8,7 +8,6 @@
   margin-bottom: 40px;
 }
 
-
 .together-style {
   color: var(--accet-green);
 }
@@ -310,7 +309,6 @@
   }
 }
 
-
 /* === DARK THEME FOR WORK TOGETHER SECTION === */
 
 body.dark .together-title {
@@ -322,7 +320,7 @@ body.dark .together-style {
 }
 
 body.dark .icons-together {
-  stroke: var(--accet-green);
+  stroke: var(--accet-green-dt);
 }
 
 body.dark .text-contacts {
@@ -353,13 +351,12 @@ body.dark .together-btn {
 }
 
 body.dark .together-btn:hover {
-  background-color: var(--hover-green)
+  background-color: var(--hover-green);
 }
 
 /* === DARK THEME FOR MODAL === */
 body.dark .modal {
   background-color: var(--charcoal-dt);
-
 }
 
 body.dark .modal-title {

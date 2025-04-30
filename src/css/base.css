@@ -9,16 +9,17 @@
   --third-family: "Montserrat", sans-serif;
 
   --black: #292929;
+  --black-dt: #1e2023;
   --hover-grey: #bbbbbb;
   --hover-green: #009156;
   --light-accet: #bcdfd1;
   --light-grey: #e4e5e6;
   --white: #f0f0f0;
   --accet-green: #00b068;
+  --accet-green-dt: #14c57c;
   --error: #e74a3b;
   --charcoal-dt: #2a2d32;
   --dark-accet-dt: #204136;
-  --black-dt: #1e2023;
 }
 
 html {

@@ -27,7 +27,7 @@ const projects = [
     image1x: project3,
     image2x: project3_2x,
     alt: 'Wallet webservice',
-    link: '#',
+    link: 'https://github.com/psv0782/ChooseMe',
   },
   {
     title: 'Green harvest webservice',
@@ -35,7 +35,7 @@ const projects = [
     image1x: project7,
     image2x: project7_2x,
     alt: 'Green harvest webservice',
-    link: '#',
+    link: 'https://github.com/psv0782/ChooseMe',
   },
   {
     title: 'English Exellence website',
@@ -43,7 +43,7 @@ const projects = [
     image1x: project5,
     image2x: project5_2x,
     alt: 'English Exellence website',
-    link: '#',
+    link: 'https://github.com/psv0782/ChooseMe',
   },
   {
     title: 'PORTFOLIO WEBSITE',
@@ -51,7 +51,7 @@ const projects = [
     image1x: project4,
     image2x: project4_2x,
     alt: 'Portfolio Website',
-    link: '#',
+    link: 'https://github.com/psv0782/ChooseMe',
   },
   {
     title: 'TRAVEL AGENCY SITE',
@@ -59,7 +59,7 @@ const projects = [
     image1x: project6,
     image2x: project6_2x,
     alt: 'Travel Agency Website',
-    link: '#',
+    link: 'https://github.com/psv0782/ChooseMe',
   },
   {
     title: 'VYSHYVANKA VIBES LANDING PAGE',
@@ -67,7 +67,7 @@ const projects = [
     image1x: project2,
     image2x: project2_2x,
     alt: 'VYSHYVANKA VIBES LANDING PAGE',
-    link: '#',
+    link: 'https://github.com/psv0782/ChooseMe',
   },
   {
     title: 'POWER PULSE WEBSERVICE',
@@ -75,7 +75,7 @@ const projects = [
     image1x: project1,
     image2x: project1_2x,
     alt: 'POWER PULSE WEBSERVICE',
-    link: '#',
+    link: 'https://github.com/psv0782/ChooseMe',
   },
   {
     title: 'CHEGO JEWELRY WEBSITE',
@@ -83,7 +83,7 @@ const projects = [
     image1x: project8,
     image2x: project8_2x,
     alt: 'CHEGO JEWELRY WEBSITE',
-    link: '#',
+    link: 'https://github.com/psv0782/ChooseMe',
   },
   {
     title: 'FRUITBOX ONLINE STORE',
@@ -91,7 +91,7 @@ const projects = [
     image1x: project9,
     image2x: project9_2x,
     alt: 'FRUITBOX ONLINE STORE',
-    link: '#',
+    link: 'https://github.com/psv0782/ChooseMe',
   },
   {
     title: 'STARLIGHT STUDIO LANDING PAGE',
@@ -99,7 +99,7 @@ const projects = [
     image1x: project10,
     image2x: project10_2x,
     alt: 'STARLIGHT STUDIO LANDING PAGE',
-    link: '#',
+    link: 'https://github.com/psv0782/ChooseMe',
   },
 ];
 

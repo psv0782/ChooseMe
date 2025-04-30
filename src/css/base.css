@@ -33,6 +33,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--black);
   background-color: var(--white);
+  margin: 0;
 }
 
 /* Styles for Mobile devices */

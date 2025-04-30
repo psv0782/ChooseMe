@@ -79,6 +79,7 @@ form.addEventListener('submit', async event => {
 
   const email = form.elements.email.value.trim();
   const comment = form.elements.comment.value.trim();
+  const darkTheme = document.body.classList.contains('dark');
 
   // Перевірка, чи заповнено поле email
   if (!email) {
@@ -87,7 +88,7 @@ form.addEventListener('submit', async event => {
       message: 'Please enter the email',
       position: 'topRight',
       titleColor: '#e74a3b',
-      color: '#f0f0f0',
+      color: darkTheme ? '#00b068' : '#bcdfd1',
       messageColor: 'red',
     });
     return;
@@ -100,7 +101,7 @@ form.addEventListener('submit', async event => {
       message: 'Please enter the comment',
       position: 'topRight',
       titleColor: '#e74a3b',
-      color: '#bcdfd1',
+      color: darkTheme ? '#00b068' : '#bcdfd1',
       messageColor: 'red',
     });
     return;
@@ -130,7 +131,7 @@ form.addEventListener('submit', async event => {
       message: 'Something went wrong, try again later',
       position: 'topRight',
       titleColor: '#e74a3b',
-      color: '#bcdfd1',
+      color: darkTheme ? '#00b068' : '#bcdfd1',
       messageColor: 'red',
     });
     console.error('Error:', error);

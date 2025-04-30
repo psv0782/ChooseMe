@@ -25,24 +25,11 @@
 .swiper-slide {
   flex-shrink: 0;
   width: 100%;
-  max-width: 296px;
-  background-color: var(--light-grey);
+   background-color: var(--light-grey);
   border-radius: 16px;
   padding: 32px;
   display: flex;
   flex-direction: row;
-}
-
-@media only screen and (min-width: 768px) {
-  .swiper-slide {
-    max-width: 704px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .swiper-slide {
-    max-width: 560px;
-  }
 }
 
 

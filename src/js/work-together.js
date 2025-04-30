@@ -86,8 +86,11 @@ form.addEventListener('submit', async event => {
       title: 'Error',
       message: 'Please enter the email',
       position: 'topRight',
+      titleColor: '#e74a3b',
+      color: '#f0f0f0',
+      messageColor: 'red',
     });
-    return; // Зупиняємо виконання, якщо поле порожнє
+    return;
   }
 
   // Перевірка, чи заповнено поле comment
@@ -96,8 +99,11 @@ form.addEventListener('submit', async event => {
       title: 'Error',
       message: 'Please enter the comment',
       position: 'topRight',
+      titleColor: '#e74a3b',
+      color: '#bcdfd1',
+      messageColor: 'red',
     });
-    return; // Зупиняємо виконання, якщо поле порожнє
+    return;
   }
 
   try {
@@ -123,6 +129,9 @@ form.addEventListener('submit', async event => {
       title: 'Error',
       message: 'Something went wrong, try again later',
       position: 'topRight',
+      titleColor: '#e74a3b',
+      color: '#bcdfd1',
+      messageColor: 'red',
     });
     console.error('Error:', error);
   }

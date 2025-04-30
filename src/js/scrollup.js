@@ -1,6 +1,6 @@
 const buttonTop = document.querySelector('.rollup');
 
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', function() {
   const windowScrollTop = window.scrollY;
   if (windowScrollTop > 100) {
     !buttonTop.classList.contains('is-active')

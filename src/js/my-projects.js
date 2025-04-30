@@ -1,4 +1,4 @@
-import icon from "../img/icons.svg";
+import icon from '../img/icons.svg';
 import project1 from '../img/project1.jpg';
 import project1_2x from '../img/project1@2x.jpg';
 import project2 from '../img/project2.jpg';

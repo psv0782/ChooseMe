@@ -3,12 +3,10 @@ const modalBackdrop = document.getElementById('modal-backdrop');
 const modalCloseBtn = document.getElementById('modal-close');
 const emailInput = form.elements.email;
 
-
 const emailWrapper = document.createElement('div');
 emailWrapper.style.position = 'relative';
 emailInput.parentNode.insertBefore(emailWrapper, emailInput);
 emailWrapper.appendChild(emailInput);
-
 
 const successIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
 successIcon.setAttribute('width', '14');
@@ -24,9 +22,7 @@ successIcon.style.fill = 'var(--accet-green)';
 const useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use');
 useElement.setAttribute('href', 'icons.svg#vector');
 successIcon.appendChild(useElement);
-
 emailWrapper.appendChild(successIcon);
-
 
 const errorText = document.createElement('p');
 errorText.textContent = 'Invalid email, try again';
@@ -36,10 +32,7 @@ errorText.style.marginTop = '8px';
 errorText.style.display = 'none';
 errorText.style.textTransform = 'none';
 
-
 emailWrapper.parentNode.insertBefore(errorText, emailWrapper.nextSibling);
-
-
 emailInput.addEventListener('input', () => {
 
   const emailValue = emailInput.value.trim();
@@ -58,7 +51,6 @@ emailInput.addEventListener('input', () => {
   }
 });
 
-
 const openModal = () => {
   modalBackdrop.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
@@ -69,7 +61,6 @@ const closeModal = () => {
   modalBackdrop.classList.add('hidden');
   document.body.style.overflow = '';
 };
-
 
 form.addEventListener('submit', async event => {
   event.preventDefault();
@@ -98,16 +89,12 @@ form.addEventListener('submit', async event => {
   }
 });
 
-
 modalCloseBtn.addEventListener('click', closeModal);
-
-
 modalBackdrop.addEventListener('click', event => {
   if (event.target === modalBackdrop) {
     closeModal();
   }
 });
-
 
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && !modalBackdrop.classList.contains('hidden')) {

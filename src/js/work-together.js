@@ -15,7 +15,7 @@ successIcon.setAttribute('width', '14');
 successIcon.setAttribute('height', '14');
 successIcon.style.position = 'absolute';
 successIcon.style.right = '17px';
-successIcon.style.top = '130px';
+successIcon.style.top = '20px';
 successIcon.style.transform = 'translateY(-50%)';
 successIcon.style.display = 'none';
 successIcon.style.stroke = 'var(--accet-green)';
@@ -34,15 +34,16 @@ errorText.style.color = 'red';
 errorText.style.fontSize = '14px';
 errorText.style.marginTop = '8px';
 errorText.style.display = 'none';
-errorText.style.textTransform = 'none'; 
+errorText.style.textTransform = 'none';
 
 
 emailWrapper.parentNode.insertBefore(errorText, emailWrapper.nextSibling);
 
 
 emailInput.addEventListener('input', () => {
+
   const emailValue = emailInput.value.trim();
-  const validEmail = /^[^\s@]+@gmail\.com$/.test(emailValue);
+  const validEmail = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(emailValue);
 
   if (validEmail) {
     successIcon.style.display = 'block';
@@ -60,13 +61,13 @@ emailInput.addEventListener('input', () => {
 
 const openModal = () => {
   modalBackdrop.classList.remove('hidden');
-  document.body.style.overflow = 'hidden'; 
+  document.body.style.overflow = 'hidden';
 };
 
 // Закриття модалки
 const closeModal = () => {
   modalBackdrop.classList.add('hidden');
-  document.body.style.overflow = ''; 
+  document.body.style.overflow = '';
 };
 
 
@@ -88,7 +89,7 @@ form.addEventListener('submit', async event => {
     }
 
     openModal();
-    form.reset(); 
+    form.reset();
     successIcon.style.display = 'none';
     errorText.style.display = 'none';
   } catch (error) {

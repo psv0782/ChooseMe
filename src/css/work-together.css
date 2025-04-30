@@ -4,9 +4,10 @@
 }
 
 .together-title {
-  color: #292929;
+  color: var(--black);
   margin-bottom: 40px;
 }
+
 
 .together-style {
   color: var(--accet-green);
@@ -18,7 +19,6 @@
 
 .icons-together {
   stroke: var(--accet-green);
-  fill: none;
   margin-right: 16px;
 }
 
@@ -121,21 +121,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .together-container {
-    position: relative;
-  }
-
-  .together-container::before {
-    content: '';
+  .img-together {
+    display: flex;
     position: absolute;
-    top: -120px;
-    width: calc(100% - (32px * 2));
-    height: calc(100% + 120px);
-    background-image: url(/img/webp/t-work-bg.webp);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 336px 260px;
+    top: 0;
     z-index: -1;
+    pointer-events: none;
+    width: 336px;
+    height: 260px;
+    right: 40px;
   }
 
   .together-title {
@@ -179,18 +173,20 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .together-container::before {
-    background-image: url(/img/webp/t-work-bg.webp);
-    top: -116px;
-    height: calc(100% + 116px);
-    background-size: 526px 408px;
+  .img-together {
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    pointer-events: none;
+    width: 526px;
+    height: 408px;
+    margin-right: 0;
   }
 
   .together-title {
     margin-bottom: 80px;
-    margin-right: 1px;
-    width: 768px;
-    height: 248px;
+    margin-right: 687px;
   }
 
   .work-together {
@@ -257,9 +253,9 @@
   text-align: center;
   background-color: var(--white);
   padding: 48px 32px;
-  border: 1px solid var(--light-grey);
   border-radius: 16px;
   width: 256px;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -304,7 +300,7 @@
 @media screen and (min-width: 768px) {
   .modal {
     width: 364px;
-    min-height: 152px;
+    min-height: 280px;
     padding: 64px 64px;
   }
 
@@ -314,50 +310,67 @@
   }
 }
 
-/* DARK */
 
-.dark .together-title {
+
+/* === DARK THEME FOR WORK TOGETHER SECTION === */
+
+body.dark .together-title {
   color: var(--white);
 }
 
-.dark .together-input-email {
-  background-color: #2a2d32;
+body.dark .together-style {
+  color: var(--accet-green);
+}
+
+body.dark .icons-together {
+  stroke: var(--accet-green);
+}
+
+body.dark .text-contacts {
   color: var(--white);
 }
 
-.dark .together-input-email::placeholder {
-  color: rgba(240, 240, 240, 0.4);
-}
-
-.dark .form-user-comment {
-  background-color: #2a2d32;
+body.dark .addr-item-link {
   color: var(--white);
 }
 
-.dark .form-user-comment::placeholder {
-  color: rgba(240, 240, 240, 0.4);
+body.dark .addr-item-link:hover {
+  color: var(--hover-green);
 }
 
-.dark .modal {
-  background-color: #2a2d32;
+body.dark .together-input-email,
+body.dark .form-user-comment {
+  background-color: var(--charcoal-dt);
+  color: var(--white);
 }
 
-.dark .modal-close-icon {
+body.dark ::placeholder {
+  color: var(--light-grey);
+}
+
+body.dark .together-btn {
+  background-color: var(--accet-green);
+  color: var(--charcoal-dt);
+}
+
+body.dark .together-btn:hover {
+  background-color: var(--hover-green)
+}
+
+/* === DARK THEME FOR MODAL === */
+body.dark .modal {
+  background-color: var(--charcoal-dt);
+  
+}
+
+body.dark .modal-title {
+  color: var(--accet-green);
+}
+
+body.dark .modal-text {
+  color: var(--white);
+}
+
+body.dark .modal-close-icon {
   stroke: var(--white);
-}
-
-.dark .modal-title {
-  color: #14c57c;
-}
-
-.dark .modal-text {
-  color: var(--white);
-}
-
-.dark .addr-item-link {
-  color: var(--white);
-}
-
-.darc .icons-together {
-  stroke: #14c57c;
 }

@@ -21,6 +21,10 @@
   --black-dt: #1e2023;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--second-family);
   font-weight: 300;

@@ -281,7 +281,7 @@ body.dark .close-icon:hover svg {
 
 /* Мобільне меню */
 body.dark .mobile-menu {
-  background-color: var(--black-dt);
+  background-color: var(--charcoal-dt);
 }
 
 /* Посилання в мобільному меню */

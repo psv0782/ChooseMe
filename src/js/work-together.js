@@ -22,7 +22,7 @@ successIcon.style.stroke = 'var(--accet-green)';
 successIcon.style.fill = 'var(--accet-green)';
 
 const useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-useElement.setAttribute('href', '/icons.svg#vector');
+useElement.setAttribute('href', 'icons.svg#vector');
 successIcon.appendChild(useElement);
 
 emailWrapper.appendChild(successIcon);

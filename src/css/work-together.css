@@ -43,7 +43,7 @@
 }
 
 .addr-item-link {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-family);
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
@@ -69,6 +69,7 @@
 }
 
 .together-input-email {
+  font-family: var(--font-family);
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 16px;
@@ -80,7 +81,7 @@
 }
 
 ::placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-family);
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
@@ -89,6 +90,7 @@
 }
 
 .form-user-comment {
+  font-family: var(--font-family);
   padding-left: 16px;
   padding-top: 16px;
   width: 320px;
@@ -100,7 +102,7 @@
 }
 
 .together-btn {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -110,7 +112,7 @@
   border-radius: 8px;
   background-color: var(--accet-green);
   border: none;
-  width: 340px;
+  width: 320px;
   height: 48px;
   margin-top: 32px;
 }
@@ -168,6 +170,12 @@
 
   .together-btn {
     width: 173px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .together-container::before {
+    background-image: url(../img/webp/t-work-bg@2x.webp);
   }
 }
 

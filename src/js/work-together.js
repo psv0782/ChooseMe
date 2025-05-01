@@ -44,14 +44,18 @@ emailInput.addEventListener('input', () => {
 
   const emailValue = emailInput.value.trim();
   const validEmail = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(emailValue);
+  const contrEmail = document.querySelector('.together-input-email');
 
   if (validEmail) {
     successIcon.style.display = 'block';
     errorText.style.display = 'none';
+    contrEmail.style.color = '#292929';
   } else {
     successIcon.style.display = 'none';
+    contrEmail.style.color = 'red';
     if (emailValue.length > 0) {
       errorText.style.display = 'block';
+
     } else {
       errorText.style.display = 'none';
     }

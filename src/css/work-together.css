@@ -70,6 +70,7 @@
 }
 
 .together-input-email {
+  font-family: 'Poppins', sans-serif;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 16px;
@@ -90,6 +91,7 @@
 }
 
 .form-user-comment {
+  font-family: 'Poppins', sans-serif;
   padding-left: 16px;
   padding-top: 16px;
   width: 320px;
@@ -111,7 +113,7 @@
   border-radius: 8px;
   background-color: var(--accet-green);
   border: none;
-  width: 340px;
+  width: 320px;
   height: 48px;
   margin-top: 32px;
 }
@@ -178,9 +180,14 @@
   }
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .together-container::before {
+    background-image: url(/img/webp/t-work-bg@2x.webp);
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .together-container::before {
-    background-image: url(/img/webp/t-work-bg.webp);
     top: -116px;
     height: calc(100% + 116px);
     background-size: 526px 408px;

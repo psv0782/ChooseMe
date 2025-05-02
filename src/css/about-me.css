@@ -96,13 +96,13 @@
   }
 
   .about-image {
-    margin-top: 410px;
+    margin-top: 408px;
     min-width: 336px;
     height: 392px;
   }
 
   .about-bio {
-    max-width: 336px;
+    min-width: 336px;
   }
 
   .about-list-title {

@@ -1,8 +1,4 @@
 /* Work together */
-.img-together {
-  display: none;
-}
-
 .together-title {
   color: var(--black);
   margin-bottom: 40px;
@@ -122,15 +118,21 @@
 }
 
 @media screen and (min-width: 768px) {
-  .img-together {
-    display: flex;
+  .together-container {
+    position: relative;
+  }
+
+  .together-container::before {
+    content: '';
     position: absolute;
-    top: 0;
+    top: -120px;
+    width: calc(100% - (32px * 2));
+    height: calc(100% + 120px);
+    background-image: url(../img/webp/t-work-bg.webp);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 336px 260px;
     z-index: -1;
-    pointer-events: none;
-    width: 336px;
-    height: 260px;
-    right: 40px;
   }
 
   .together-title {
@@ -180,20 +182,17 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .img-together {
-    display: flex;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    pointer-events: none;
-    width: 526px;
-    height: 408px;
-    margin-right: 0;
+  .together-container::before {
+    top: -116px;
+    height: calc(100% + 116px);
+    background-size: 526px 408px;
   }
 
   .together-title {
     margin-bottom: 80px;
-    margin-right: 687px;
+    margin-right: 1px;
+    width: 768px;
+    height: 248px;
   }
 
   .work-together {
